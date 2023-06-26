@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { recordingsReducer } from '../features/recordingsSlice';
+import { recordingsReducer } from '../features/recordings/recordingsSlice';
 import {
     persistStore,
     persistCombineReducers,
@@ -20,7 +20,7 @@ const config = {
 
 export const store = configureStore({
     reducer: persistCombineReducers(config, {
-        recordings: recordingsReducer
+        recordings: recordingsReducer,
     }),
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({

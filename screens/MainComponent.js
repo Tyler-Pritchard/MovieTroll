@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { createStackNavigator } from '@react-navigation/stack';
 import {
@@ -8,9 +8,14 @@ import {
 } from '@react-navigation/drawer';
 import Constants from 'expo-constants';
 import logo from '../assets/images/logo.png';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchRecordings } from '../features/recordings/recordingsSlice';
 import RecordingsScreen from './RecordingsScreen';
 import AboutScreen from './AboutScreen';
 import HomeScreen from './HomeScreen';
+import ContactScreen from './ContactScreen';
+import LoginScreen from './LoginScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -98,7 +103,7 @@ const RecordingNavigator = () => {
                     title: 'Recording',
                     headerLeft: () => (
                         <Icon
-                            name='tree'
+                            name='microphone'
                             type='font-awesome'
                             iconStyle={styles.stackIcon}
                             onPress={() => navigation.toggleDrawer()}
@@ -141,9 +146,9 @@ const LoginNavigator = () => {
 const CustomDrawerContent = (props) => (
     <DrawerContentScrollView {...props}>
         <View style={styles.drawerHeader}>
-            {/* <View style={{ flex: 1 }}>
+            <View style={{ flex: 1 }}>
                 <Image source={logo} style={styles.drawerImage} />
-            </View> */}
+            </View>
             <View style={{ flex: 2 }}>
                 <Text style={styles.drawerHeaderText}>CT3k</Text>
             </View>
@@ -153,6 +158,12 @@ const CustomDrawerContent = (props) => (
 );
 
 const Main = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchRecordings());
+    }, [dispatch]);
+
     return (
         <View
             style={{
@@ -204,7 +215,7 @@ const Main = () => {
                         title: 'Recordings',
                         drawerIcon: ({ color }) => (
                             <Icon
-                                name='tree'
+                                name='microphone'
                                 type='font-awesome'
                                 size={24}
                                 iconStyle={{ width: 24 }}

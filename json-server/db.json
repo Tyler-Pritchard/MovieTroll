@@ -1,0 +1,9 @@
+{
+  "recordings": [
+    {
+      "id": 0,
+      "name": "Recording 1",
+      "image": "images/logo.png"
+    }
+  ]
+}
