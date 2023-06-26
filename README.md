@@ -22,10 +22,10 @@ Expo
 ### Executing program
 
 * How to run the program
-* Step-by-step bullets
+* Dev: Start JSON server (see json-server/readme.md)
 ```
-npm install
-npm start
+yarn install
+npx expo start
 ```
 
 ## Help

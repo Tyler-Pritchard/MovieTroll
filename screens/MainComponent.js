@@ -11,7 +11,8 @@ import logo from '../assets/images/logo.png';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchRecordings } from '../features/recordings/recordingsSlice';
-import RecordingsScreen from './RecordingsScreen';
+import RecordingScreen from './RecordingScreen';
+import PlaybackScreen from './PlaybackScreen';
 import AboutScreen from './AboutScreen';
 import HomeScreen from './HomeScreen';
 import ContactScreen from './ContactScreen';
@@ -98,9 +99,32 @@ const RecordingNavigator = () => {
         <Stack.Navigator screenOptions={screenOptions}>
             <Stack.Screen
                 name='Recording'
-                component={RecordingsScreen}
+                component={RecordingScreen}
                 options={({ navigation }) => ({
                     title: 'Recording',
+                    headerLeft: () => (
+                        <Icon
+                            name='microphone'
+                            type='font-awesome'
+                            iconStyle={styles.stackIcon}
+                            onPress={() => navigation.toggleDrawer()}
+                        />
+                    )
+                })}
+            />
+        </Stack.Navigator>
+    );
+};
+
+const PlaybackNavigator = () => {
+    const Stack = createStackNavigator();
+    return (
+        <Stack.Navigator screenOptions={screenOptions}>
+            <Stack.Screen
+                name='Playback'
+                component={PlaybackScreen}
+                options={({ navigation }) => ({
+                    title: 'Playback',
                     headerLeft: () => (
                         <Icon
                             name='microphone'
@@ -212,10 +236,26 @@ const Main = () => {
                     name='Recordings'
                     component={RecordingNavigator}
                     options={{
-                        title: 'Recordings',
+                        title: 'Record',
                         drawerIcon: ({ color }) => (
                             <Icon
                                 name='microphone'
+                                type='font-awesome'
+                                size={24}
+                                iconStyle={{ width: 24 }}
+                                color={color}
+                            />
+                        )
+                    }}
+                />
+                <Drawer.Screen
+                    name='Playback'
+                    component={PlaybackNavigator}
+                    options={{
+                        title: 'Playback',
+                        drawerIcon: ({ color }) => (
+                            <Icon
+                                name='play'
                                 type='font-awesome'
                                 size={24}
                                 iconStyle={{ width: 24 }}

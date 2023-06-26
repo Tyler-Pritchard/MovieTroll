@@ -4,7 +4,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import { Audio } from 'expo-av';
 import * as Sharing from 'expo-sharing';
 
-const RecordingsScreen = () => {
+const RecordingScreen = () => {
     const [recording, setRecording] = React.useState();
     const [recordings, setRecordings] = React.useState([]);
     const [message, setMessage] = React.useState("");
@@ -50,7 +50,7 @@ const RecordingsScreen = () => {
       const minutes = millis / 1000 / 60;
       const minutesDisplay = Math.floor(minutes);
       const seconds = Math.round(minutes - minutesDisplay) * 60;
-      const secondsDisplay = seconds < 10 ? `0{seconds}` : seconds;
+      const secondsDisplay = seconds < 10 ? `${seconds}` : seconds;
       return `${minutesDisplay}: ${secondsDisplay}`;
     }
   
@@ -109,4 +109,4 @@ const RecordingsScreen = () => {
   });
   
 
-  export default RecordingsScreen;
+  export default RecordingScreen;
