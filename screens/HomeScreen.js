@@ -5,7 +5,7 @@ const HomeScreen = () => {
     return (
         <View style={styles.container}>
             <ImageBackground source={require('../assets/images/theater.png')} resizeMode="cover" style={styles.image}>
-                <Text style={styles.text}>Make Me Laugh</Text>
+                <Text style={styles.text}>Welcome to the Show</Text>
             </ImageBackground>
         </View>
     );

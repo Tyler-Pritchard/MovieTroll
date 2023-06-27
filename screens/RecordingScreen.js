@@ -46,14 +46,14 @@ const RecordingScreen = () => {
       setRecordings(updatedRecordings);
     }
   
-    function getDurationFormatted(millis) {
-      const minutes = millis / 1000 / 60;
-      const minutesDisplay = Math.floor(minutes);
-      const seconds = Math.round(minutes - minutesDisplay) * 60;
-      const secondsDisplay = seconds < 10 ? `${seconds}` : seconds;
-      return `${minutesDisplay}: ${secondsDisplay}`;
-    }
-  
+  function getDurationFormatted(millis) {
+    const minutes = millis / 1000 / 60;
+    const minutesDisplay = Math.floor(minutes);
+    const seconds = Math.round((minutes - minutesDisplay) * 60);
+    const secondsDisplay = seconds < 10 ? `0${seconds}` : seconds;
+    return `${minutesDisplay}:${secondsDisplay}`;
+  }
+
     function getRecordingLines() {
       return recordings.map((recordingLine, index) => {
         return (
@@ -76,7 +76,7 @@ const RecordingScreen = () => {
   
     return (
       <View style={styles.container}>
-        <Text>{message}</Text>
+        <Text style={styles.text}>{message}</Text>
         <Button 
           title={recording ? 'Stop Recording' : 'Start Recording'}
           onPress={recording ? stopRecording : startRecording}
@@ -90,22 +90,23 @@ const RecordingScreen = () => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#121212',
       alignItems: 'center',
       justifyContent: 'center',
     },
     row: {
       flexDirection: 'row',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'center'
     },
     fill: {
       flex: 1,
-      margin: 16
+      margin: 16,
+      color: "#fff"
     },
     button: {
       margin:16
-    }
+    },
   });
   
 

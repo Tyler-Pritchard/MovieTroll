@@ -21,7 +21,7 @@ import LoginScreen from './LoginScreen';
 const Drawer = createDrawerNavigator();
 
 const screenOptions = {
-    headerTintColor: '#fff',
+    headerTintColor: '#E2B640',
     headerStyle: { backgroundColor: '#121212' }
 };
 
