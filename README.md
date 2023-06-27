@@ -22,7 +22,7 @@ Expo
 ### Executing program
 
 * How to run the program
-* Dev: Start JSON server (see json-server/readme.md)
+<!-- * Dev: Start JSON server (see json-server/readme.md) -->
 ```
 yarn install
 npx expo start
