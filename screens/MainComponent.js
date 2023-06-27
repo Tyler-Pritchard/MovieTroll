@@ -22,7 +22,7 @@ const Drawer = createDrawerNavigator();
 
 const screenOptions = {
     headerTintColor: '#fff',
-    headerStyle: { backgroundColor: '#5637DD' }
+    headerStyle: { backgroundColor: '#121212' }
 };
 
 const HomeNavigator = () => {
@@ -303,7 +303,7 @@ const Main = () => {
 
 const styles = StyleSheet.create({
     drawerHeader: {
-        backgroundColor: '#5637DD',
+        backgroundColor: 'black',
         height: 140,
         alignItems: 'center',
         justifyContent: 'center',
@@ -311,7 +311,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     drawerHeaderText: {
-        color: '#fff',
+        color: '#E2B640',
         fontSize: 24,
         fontWeight: 'bold'
     },
@@ -322,7 +322,7 @@ const styles = StyleSheet.create({
     },
     stackIcon: {
         marginLeft: 10,
-        color: '#fff',
+        color: '#E2B640',
         fontSize: 24
     }
 });

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import { Card } from 'react-native-elements';
 import Loading from '../components/LoadingComponent';
 import * as Sharing from 'expo-sharing';
 
@@ -21,17 +22,20 @@ const PlaybackScreen = () => {
       return recordings.map((recordingLine, index) => {
         return (
           <View key={index} style={styles.row}>
-            <Text style={styles.fill}>
-              Recording {index + 1} - {recordingLine.duration}
-            </Text>
-            <Button 
-              style={styles.button} 
-              onPress={() => recordingLine.sound.replayAsync()}
-              title='Play'
-            />
-            <Button 
-              style={styles.button} onPress={() => Sharing.shareAsync(recordingLine.file)} title="Share"
-            />
+            <Card>
+              <Text style={styles.fill}>
+                Recording {index + 1} - {recordingLine.duration}
+              </Text>
+              <Card.Divider />
+              <Button 
+                style={styles.button} 
+                onPress={() => recordingLine.sound.replayAsync()}
+                title='Play'
+              />
+              <Button 
+                style={styles.button} onPress={() => Sharing.shareAsync(recordingLine.file)} title="Share"
+              />
+            </Card>
           </View> 
         )
       })
@@ -47,7 +51,7 @@ const PlaybackScreen = () => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#121212',
       alignItems: 'center',
       justifyContent: 'center',
     },

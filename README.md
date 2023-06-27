@@ -59,3 +59,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Inspiration, code snippets, etc.
 * [Audio Recording and Playback for Expo React Native Apps](https://www.youtube.com/watch?v=pd_Ez9Kbi2c)
 * [GITREPO-reactnative-nucampsite-2.1](https://www.nucamp.co)
+* [Photo by Felix Mooneeram](https://unsplash.com/@felixmooneeram?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)(https://unsplash.com/s/photos/theater?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  ]
