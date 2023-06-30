@@ -2,8 +2,15 @@
   "recordings": [
     {
       "id": 0,
-      "name": "Pumping Iron for Enya",
-      "image": "images/logo.png"
+      "name": "test 1",
+      "image": "images/logo.png",
+      "url": "recordings/test1.mp3"
+    },
+    {
+      "id": 1,
+      "name": "test 2",
+      "image": "images/logo.png",
+      "url": "recordings/test1.mp3"
     }
   ]
 }
