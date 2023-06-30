@@ -6,6 +6,14 @@ Simple overview of use/purpose.
 
 I didn't think I understood the Pew-Die-Pie Generation, but then I realized I watch Rifftrax, which is pretty much the same thing but for movies.  People don't just want to watch stuff-- they want to watch stuff with their friends.  This app is for people who love watching bad entertainment, and talking over it the whole time.
 
+## Demo
+
+![Welcome Screen](./assets/screenShots/welcomeScreen.png)
+![Recording Screen](./assets/screenShots/recordingScreen.png)
+![Playback Screen](./assets/screenShots/playbackScreen.png)
+
+
+
 ## Getting Started
 Expo
 
