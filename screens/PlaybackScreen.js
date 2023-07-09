@@ -50,7 +50,7 @@ const PlaybackScreen = () => {
 
 
     const renderRecording = ({ item: recording }) => {
-      
+      console.log("imageUrl: ", baseUrl + recording.image)
       return (
           <View style={styles.column}>
               <Tile 
@@ -58,7 +58,7 @@ const PlaybackScreen = () => {
                 imageSrc={{uri: baseUrl + recording.image}}
               />
               {/* <Card.Divider /> */}
-              <PlaybackComponent />
+              <PlaybackComponent audioFile={recording.url}/>
               <Button 
                 style={styles.button} onPress={() => Sharing.shareAsync(recording.file)} title="Share"
               />

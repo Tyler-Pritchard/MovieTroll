@@ -1,16 +1,17 @@
 import * as React from 'react';
-import { useSelector } from 'react-redux';
-import { Text, View, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Button } from 'react-native';
 import { Audio } from 'expo-av';
 
-export default function PlaybackComponent() {
+export default function PlaybackComponent(props) {
   const [sound, setSound] = React.useState();
-  const recordings = useSelector((state) => state.recordings);
-
-
+  
   async function playSound() {
     console.log('Loading Sound');
-    const { sound } = await Audio.Sound.createAsync( require('../assets/recordings/test1.mp3')
+
+    const { sound } = await Audio.Sound.createAsync(require('../json-server/public/recordings/test1.mp3') //<<< WORKS
+
+    // const { sound } = await Audio.Sound.createAsync(require('http://10.0.0.95:3001/recordings/test1.mp3')   <<<  DOES NOT WORK
+    
     );
     setSound(sound);
 
