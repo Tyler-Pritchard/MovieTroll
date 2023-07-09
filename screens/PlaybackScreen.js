@@ -55,7 +55,7 @@ const PlaybackScreen = () => {
           <View style={styles.column}>
               <Tile 
                 title={recording.name}
-                imgSrc={{uri:baseUrl + recording.image}}
+                imageSrc={{uri: baseUrl + recording.image}}
               />
               {/* <Card.Divider /> */}
               <PlaybackComponent />
