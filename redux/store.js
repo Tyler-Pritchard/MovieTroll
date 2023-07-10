@@ -33,7 +33,10 @@ export const store = configureStore({
                     PURGE,
                     REGISTER
                 ]
-            }
+            },
+            immutableCheck: {
+                ignoredPaths: ['ignoredPath', 'ignoredNested.one', 'ignoredNested.two'],
+            },
         })
 });
 

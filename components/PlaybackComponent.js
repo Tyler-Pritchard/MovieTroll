@@ -9,10 +9,10 @@ export default function PlaybackComponent(props) {
     console.log('Loading Sound');
 
     const { sound } = await Audio.Sound.createAsync(require('../json-server/public/recordings/test1.mp3') //<<< WORKS
-
-    // const { sound } = await Audio.Sound.createAsync(require('http://10.0.0.95:3001/recordings/test1.mp3')   <<<  DOES NOT WORK
+    // const { sound } = await Audio.Sound.createAsync(require('http://10.0.0.95:3001/recordings/test1.mp3')   //<<<  DOES NOT WORK
     
     );
+    console.log(sound)
     setSound(sound);
 
     console.log('Playing Sound');
