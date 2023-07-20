@@ -1,4 +1,4 @@
-# Comedy Theater 3000 for React Native
+# MovieTroll for React Native
 
 A community-driven mobile application for recording and playing audio commentary for copyrighted works including film and television.
 
@@ -70,4 +70,3 @@ Inspiration, code snippets, etc.
 * [Audio Recording and Playback for Expo React Native Apps](https://www.youtube.com/watch?v=pd_Ez9Kbi2c)
 * [GITREPO-reactnative-nucampsite-2.1](https://www.nucamp.co)
 * [Photo by Felix Mooneeram](https://unsplash.com/@felixmooneeram?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)(https://unsplash.com/s/photos/theater?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-  ]
