@@ -4,7 +4,7 @@ A community-driven mobile application for recording and playing audio commentary
 
 ## Description
 
-In our modern age where technology has led to increased isolation, people don't just want to watch stuff-- they want to watch stuff with their friends.  This app is for people who love watching bad entertainment, and talking over it the whole time.  The inspiration comes from watching YouTubers go to great lengths in editing to avoid copyright infringements while creating content intended to satirize sub-par entertainment.
+In our modern age where technology has led to increased isolation, people don't just want to watch stuff-- they want to watch stuff with their friends.  This app is for people who love watching bad entertainment, and talking over it the whole time.  The inspiration comes from growing up watching Mystery Science Theater 3000 and more recently, watching YouTubers go to great lengths in editing to avoid copyright infringements while creating content intended to satirize sub-par entertainment.
 
 Future features of this project will include a backend linked to a movie database, syncing functions, storage for audio files, and a browser extension.  FUTURE future features will include the ability to rate commentaries, and algorithmic procedures for recommending commentaries based review ratings and user preferences. 
 

@@ -63,7 +63,7 @@ const PlaybackScreen = () => {
                   startingValue={recording.rating}
                   imageSize={15}
                   readonly
-                  style={{ alignItems: 'flex-start', paddingVertical: '5%' }}
+                  style={styles.rating}
               />
               <Card.Divider />
               <PlaybackComponent audioFile={recording.url}/>
@@ -111,6 +111,10 @@ const PlaybackScreen = () => {
     button: {
       margin:1,
       width: 10
+    },
+    rating: { 
+      alignItems: 'flex-start', 
+      paddingVertical: '5%' 
     }
   });
   
