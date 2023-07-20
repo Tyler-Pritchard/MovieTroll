@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useSelector} from 'react-redux';
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View, FlatList } from 'react-native';
 import {Tile} from 'react-native-elements';
-import { Card } from 'react-native-elements';
+import { Card, Rating } from 'react-native-elements';
 import Loading from '../components/LoadingComponent';
 import * as Sharing from 'expo-sharing';
 import { baseUrl } from '../shared/baseUrl';
@@ -11,6 +11,8 @@ import PlaybackComponent from '../components/PlaybackComponent';
 
 const PlaybackScreen = () => {
   const recordings = useSelector((state) => state.recordings);
+  const [rating, setRating] = useState(5);
+
 
   console.log(recordings)
   if (recordings.isLoading) {
@@ -57,7 +59,13 @@ const PlaybackScreen = () => {
                 title={recording.name}
                 imageSrc={{uri: baseUrl + recording.image}}
               />
-              {/* <Card.Divider /> */}
+              <Rating
+                  startingValue={recording.rating}
+                  imageSize={15}
+                  readonly
+                  style={{ alignItems: 'flex-start', paddingVertical: '5%' }}
+              />
+              <Card.Divider />
               <PlaybackComponent audioFile={recording.url}/>
               <Button 
                 style={styles.button} onPress={() => Sharing.shareAsync(recording.file)} title="Share"

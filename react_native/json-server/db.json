@@ -1,0 +1,16 @@
+{
+  "recordings": [
+    {
+      "id": 0,
+      "name": "test 1",
+      "image": "images/ijdod.png",
+      "url": "recordings/test1.mp3"
+    },
+    {
+      "id": 1,
+      "name": "test 2",
+      "image": "images/cw.png",
+      "url": "recordings/test1.mp3"
+    }
+  ]
+}
