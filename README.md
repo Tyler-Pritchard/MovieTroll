@@ -1,4 +1,4 @@
-# MovieTroll for React Native
+# MovieTroll
 
 A community-driven mobile application for recording and playing audio commentary in conjunction with copywritten film and television releases.
 
