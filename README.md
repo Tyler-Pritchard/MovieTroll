@@ -21,7 +21,6 @@ Future features of this project will include a backend linked to a movie databas
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
 #### Node Server
 * cors 2.8.5
 * crypto-js 4.1.1
