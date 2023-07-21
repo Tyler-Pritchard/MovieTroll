@@ -1,5 +1,5 @@
 const Recording = require("../models/Recording");
-const { verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken");
+const { verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("../utilities/verifyToken");
 
 const router = require("express").Router();
 
