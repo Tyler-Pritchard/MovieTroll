@@ -6,6 +6,7 @@ import {
     DrawerContentScrollView,
     DrawerItemList
 } from '@react-navigation/drawer';
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import logo from '../assets/images/logo.png';
 import { useDispatch } from 'react-redux';

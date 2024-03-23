@@ -1,0 +1,20 @@
+TODO: When publishing to App store a pod file will need to be generated to allow: auth0, 
+
+
+---------
+Auth0
+https://auth0.com/docs/quickstart/native/react-native/00-login#configure-auth0
+
+AI:
+Here are some steps to set up a Podfile in React Native:
+Create a new folder for the project
+Copy the existing iOS project to a folder called ios
+cd into the ios subdirectory
+Open Terminal
+Navigate to the project directory
+Add the command pod init to generate podfile
+Save the Podfile in the root directory of your Xcode project
+Add your library name into podfile as pod library name
+Run the pod install command to install the specified dependencies 
+You can find the Podfile in Xcode by opening the Pods item from the top level of your project view, where it should be a sibling (not a child) of your app. If it doesn't exist, you can do a quick build with the play button, or run pod install. The Pods item should then appear, with Podfile as the first item under it. 
+------

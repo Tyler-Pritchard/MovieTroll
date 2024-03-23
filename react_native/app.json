@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CT3k",
-    "slug": "CT3k",
+    "name": "MovieTroll",
+    "slug": "MovieTroll",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
