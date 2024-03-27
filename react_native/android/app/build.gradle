@@ -75,13 +75,13 @@ android {
 
     namespace "com.auth0samples"
     defaultConfig {
-        applicationId "com.auth0samples"
+        applicationId 'com.tylerpritchard.MovieTroll'
         manifestPlaceholders = [auth0Domain: "dev-rtbvnrdv112cpfqv.us.auth0.com", auth0Scheme: "${applicationId}.auth0"]
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
-        manifestPlaceholders = [auth0Domain: "dev-rtbvnrdv112cpfqv.us.auth0.com", auth0Scheme: "${applicationId}"]
+        versionName "1.0.0"
+        manifestPlaceholders = [auth0Domain: "dev-rtbvnrdv112cpfqv.us.auth0.com", auth0Scheme: "${applicationId}.auth0"]
     }
 
     splits {

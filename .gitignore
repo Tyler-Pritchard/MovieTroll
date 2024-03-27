@@ -47,7 +47,7 @@ local.properties
 *.hprof
 .cxx/
 *.keystore
-!debug.keystore
+*!debug.keystore
 
 # node.js
 #

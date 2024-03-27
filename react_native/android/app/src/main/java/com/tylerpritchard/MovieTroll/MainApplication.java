@@ -1,4 +1,4 @@
-package com.auth0samples;
+package com.tylerpritchard.MovieTroll;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
